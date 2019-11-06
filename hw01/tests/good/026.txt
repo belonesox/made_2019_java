@@ -1,0 +1,4 @@
+
+         Trade:{
+       “type”:          FX_SPOT,                “price”:
+    27091.9322068      }

@@ -1,0 +1,4 @@
+
+              Trade:       {   “type”:
+    COMMODITY_SPOT,“price”:180686.41541
+           }
