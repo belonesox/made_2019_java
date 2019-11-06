@@ -1,5 +1,4 @@
 
-Trade: { 
-    “type”: IR_SWAP,
-    “price”: 736
-}
+     Trade:{               “type”:BOND,
+       “price”:
+ 1734}

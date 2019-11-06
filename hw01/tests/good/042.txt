@@ -1,5 +1,2 @@
-
-Trade: { 
-    “type”: COMMODITY_SPOT,
-    “price”: -1329
-}
+          Trade:{“type”:FX_SPOT,
+      “price”:              241461.038858  }

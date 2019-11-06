@@ -40,8 +40,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/000.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(-1861, result.getPrice());
+        assertTrue("Type OK", result instanceof CommoditySpot);
+        assertEquals(172395.073138, result.getPrice());
     }
             
 
@@ -50,8 +50,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/001.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(-960, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(-1919, result.getPrice());
     }
             
 
@@ -60,8 +60,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/002.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(39147.6426703, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(-546, result.getPrice());
     }
             
 
@@ -70,8 +70,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/003.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(231405.166229, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(-1230, result.getPrice());
     }
             
 
@@ -80,8 +80,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/004.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(666, result.getPrice());
+        assertTrue("Type OK", result instanceof Bond);
+        assertEquals(-352, result.getPrice());
     }
             
 
@@ -90,8 +90,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/005.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(425884.770205, result.getPrice());
+        assertTrue("Type OK", result instanceof Bond);
+        assertEquals(-626, result.getPrice());
     }
             
 
@@ -100,8 +100,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/006.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(409852.736577, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(468, result.getPrice());
     }
             
 
@@ -110,8 +110,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/007.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(15091.1828157, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(840, result.getPrice());
     }
             
 
@@ -120,8 +120,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/008.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(199652.978636, result.getPrice());
+        assertTrue("Type OK", result instanceof CommoditySpot);
+        assertEquals(199117.019754, result.getPrice());
     }
             
 
@@ -130,8 +130,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/009.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(-30102.0725382, result.getPrice());
+        assertTrue("Type OK", result instanceof IrSwap);
+        assertEquals(1275, result.getPrice());
     }
             
 
@@ -140,8 +140,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/010.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(-1139, result.getPrice());
+        assertTrue("Type OK", result instanceof CommoditySpot);
+        assertEquals(-435, result.getPrice());
     }
             
 
@@ -150,8 +150,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/011.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(111443.419768, result.getPrice());
+        assertTrue("Type OK", result instanceof IrSwap);
+        assertEquals(1722, result.getPrice());
     }
             
 
@@ -160,8 +160,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/012.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(66230.3751131, result.getPrice());
+        assertTrue("Type OK", result instanceof Bond);
+        assertEquals(320481.566261, result.getPrice());
     }
             
 
@@ -171,7 +171,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(412393.680726, result.getPrice());
+        assertEquals(239522.695811, result.getPrice());
     }
             
 
@@ -180,8 +180,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/014.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(1981, result.getPrice());
+        assertTrue("Type OK", result instanceof CommoditySpot);
+        assertEquals(-1456, result.getPrice());
     }
             
 
@@ -190,8 +190,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/015.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(213, result.getPrice());
+        assertTrue("Type OK", result instanceof CommoditySpot);
+        assertEquals(330732.853852, result.getPrice());
     }
             
 
@@ -200,8 +200,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/016.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(647, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(-608, result.getPrice());
     }
             
 
@@ -210,8 +210,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/017.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(-529, result.getPrice());
+        assertTrue("Type OK", result instanceof Bond);
+        assertEquals(137173.522319, result.getPrice());
     }
             
 
@@ -221,7 +221,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(159545.551945, result.getPrice());
+        assertEquals(426256.001124, result.getPrice());
     }
             
 
@@ -230,8 +230,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/019.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(-31734.0107311, result.getPrice());
+        assertTrue("Type OK", result instanceof CommoditySpot);
+        assertEquals(180686.41541, result.getPrice());
     }
             
 
@@ -240,8 +240,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/020.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(-931, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(1510, result.getPrice());
     }
             
 
@@ -251,7 +251,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof Bond);
-        assertEquals(70934.4631343, result.getPrice());
+        assertEquals(444116.906425, result.getPrice());
     }
             
 
@@ -261,7 +261,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(168015.15329, result.getPrice());
+        assertEquals(299098.716457, result.getPrice());
     }
             
 
@@ -271,7 +271,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(40938.9186505, result.getPrice());
+        assertEquals(213457.302216, result.getPrice());
     }
             
 
@@ -280,8 +280,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/024.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(1443, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(263335.960492, result.getPrice());
     }
             
 
@@ -291,7 +291,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(-318, result.getPrice());
+        assertEquals(105881.71906, result.getPrice());
     }
             
 
@@ -301,7 +301,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(275113.195167, result.getPrice());
+        assertEquals(27091.9322068, result.getPrice());
     }
             
 
@@ -310,8 +310,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/027.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(392044.201671, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(-1048, result.getPrice());
     }
             
 
@@ -320,8 +320,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/028.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(-1057, result.getPrice());
+        assertTrue("Type OK", result instanceof IrSwap);
+        assertEquals(92, result.getPrice());
     }
             
 
@@ -331,7 +331,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof Bond);
-        assertEquals(503, result.getPrice());
+        assertEquals(-1441, result.getPrice());
     }
             
 
@@ -340,8 +340,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/030.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(197931.955806, result.getPrice());
+        assertTrue("Type OK", result instanceof CommoditySpot);
+        assertEquals(732, result.getPrice());
     }
             
 
@@ -350,8 +350,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/031.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(280147.173786, result.getPrice());
+        assertTrue("Type OK", result instanceof IrSwap);
+        assertEquals(1022, result.getPrice());
     }
             
 
@@ -360,8 +360,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/032.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(-1428, result.getPrice());
+        assertTrue("Type OK", result instanceof Bond);
+        assertEquals(1943, result.getPrice());
     }
             
 
@@ -371,7 +371,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(247753.029778, result.getPrice());
+        assertEquals(297888.723551, result.getPrice());
     }
             
 
@@ -380,8 +380,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/034.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(201348.676797, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(441, result.getPrice());
     }
             
 
@@ -390,8 +390,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/035.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(366222.000226, result.getPrice());
+        assertTrue("Type OK", result instanceof Bond);
+        assertEquals(-1797, result.getPrice());
     }
             
 
@@ -400,8 +400,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/036.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(695, result.getPrice());
+        assertTrue("Type OK", result instanceof IrSwap);
+        assertEquals(-180, result.getPrice());
     }
             
 
@@ -410,8 +410,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/037.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(1341, result.getPrice());
+        assertTrue("Type OK", result instanceof CommoditySpot);
+        assertEquals(-18936.2994075, result.getPrice());
     }
             
 
@@ -420,8 +420,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/038.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(326375.830886, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(-74, result.getPrice());
     }
             
 
@@ -430,8 +430,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/039.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(350560.038309, result.getPrice());
+        assertTrue("Type OK", result instanceof Bond);
+        assertEquals(428299.021088, result.getPrice());
     }
             
 
@@ -440,8 +440,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/040.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(-1224, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(1920, result.getPrice());
     }
             
 
@@ -451,7 +451,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(1765, result.getPrice());
+        assertEquals(350754.667069, result.getPrice());
     }
             
 
@@ -460,8 +460,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/042.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(-1329, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(241461.038858, result.getPrice());
     }
             
 
@@ -470,8 +470,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/043.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(73450.5436419, result.getPrice());
+        assertTrue("Type OK", result instanceof IrSwap);
+        assertEquals(65207.5349511, result.getPrice());
     }
             
 
@@ -480,8 +480,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/044.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(506, result.getPrice());
+        assertTrue("Type OK", result instanceof CommoditySpot);
+        assertEquals(-799, result.getPrice());
     }
             
 
@@ -490,8 +490,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/045.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(-1865, result.getPrice());
+        assertTrue("Type OK", result instanceof IrSwap);
+        assertEquals(351312.821361, result.getPrice());
     }
             
 
@@ -500,8 +500,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/046.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(1829, result.getPrice());
+        assertTrue("Type OK", result instanceof Bond);
+        assertEquals(240330.829387, result.getPrice());
     }
             
 
@@ -511,7 +511,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof Bond);
-        assertEquals(-1296, result.getPrice());
+        assertEquals(144296.430515, result.getPrice());
     }
             
 
@@ -520,8 +520,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/048.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(339911.293437, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(437598.654339, result.getPrice());
     }
             
 
@@ -530,8 +530,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/049.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(446048.845502, result.getPrice());
+        assertTrue("Type OK", result instanceof Bond);
+        assertEquals(386583.530579, result.getPrice());
     }
             
 
@@ -540,8 +540,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/050.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(160896.239034, result.getPrice());
+        assertTrue("Type OK", result instanceof IrSwap);
+        assertEquals(540, result.getPrice());
     }
             
 
@@ -550,8 +550,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/051.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(18503.9498436, result.getPrice());
+        assertTrue("Type OK", result instanceof CommoditySpot);
+        assertEquals(296, result.getPrice());
     }
             
 
@@ -560,8 +560,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/052.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(336770.441322, result.getPrice());
+        assertTrue("Type OK", result instanceof Bond);
+        assertEquals(136481.987266, result.getPrice());
     }
             
 
@@ -571,7 +571,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof Bond);
-        assertEquals(-898, result.getPrice());
+        assertEquals(315104.368332, result.getPrice());
     }
             
 
@@ -580,8 +580,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/054.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(736, result.getPrice());
+        assertTrue("Type OK", result instanceof Bond);
+        assertEquals(1734, result.getPrice());
     }
             
 
@@ -590,8 +590,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/055.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(179088.196565, result.getPrice());
+        assertTrue("Type OK", result instanceof IrSwap);
+        assertEquals(193047.011683, result.getPrice());
     }
             
 
@@ -600,8 +600,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/056.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(405322.090225, result.getPrice());
+        assertTrue("Type OK", result instanceof CommoditySpot);
+        assertEquals(-1553, result.getPrice());
     }
             
 
@@ -611,7 +611,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(-911, result.getPrice());
+        assertEquals(654, result.getPrice());
     }
             
 
@@ -621,7 +621,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(1712, result.getPrice());
+        assertEquals(286885.895, result.getPrice());
     }
             
 
@@ -630,8 +630,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/059.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(151578.366394, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(1601, result.getPrice());
     }
             
 
@@ -640,8 +640,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/060.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(1187, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(-1893, result.getPrice());
     }
             
 
@@ -650,8 +650,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/061.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(499, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(202135.601928, result.getPrice());
     }
             
 
@@ -660,8 +660,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/062.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(1909, result.getPrice());
+        assertTrue("Type OK", result instanceof Bond);
+        assertEquals(125375.414247, result.getPrice());
     }
             
 
@@ -670,8 +670,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/063.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(-214, result.getPrice());
+        assertTrue("Type OK", result instanceof CommoditySpot);
+        assertEquals(1, result.getPrice());
     }
             
 
@@ -680,8 +680,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/064.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(47133.2389828, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(1341, result.getPrice());
     }
             
 
@@ -690,8 +690,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/065.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(69646.0420041, result.getPrice());
+        assertTrue("Type OK", result instanceof CommoditySpot);
+        assertEquals(-1499, result.getPrice());
     }
             
 
@@ -700,8 +700,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/066.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(302844.838312, result.getPrice());
+        assertTrue("Type OK", result instanceof CommoditySpot);
+        assertEquals(-21017.8049013, result.getPrice());
     }
             
 
@@ -711,7 +711,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof Bond);
-        assertEquals(431888.828646, result.getPrice());
+        assertEquals(426154.557475, result.getPrice());
     }
             
 
@@ -721,7 +721,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(410332.347597, result.getPrice());
+        assertEquals(64889.6076134, result.getPrice());
     }
             
 
@@ -730,8 +730,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/069.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(372822.090012, result.getPrice());
+        assertTrue("Type OK", result instanceof Bond);
+        assertEquals(208786.823004, result.getPrice());
     }
             
 
@@ -740,8 +740,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/070.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(194957.822636, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(94491.2745468, result.getPrice());
     }
             
 
@@ -751,7 +751,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof Bond);
-        assertEquals(351599.402974, result.getPrice());
+        assertEquals(84507.6735452, result.getPrice());
     }
             
 
@@ -760,8 +760,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/072.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(392268.042154, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(243, result.getPrice());
     }
             
 
@@ -770,8 +770,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/073.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(-318, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(344554.253808, result.getPrice());
     }
             
 
@@ -780,8 +780,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/074.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(220, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(50984.6563503, result.getPrice());
     }
             
 
@@ -790,8 +790,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/075.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(182531.846367, result.getPrice());
+        assertTrue("Type OK", result instanceof Bond);
+        assertEquals(272292.942182, result.getPrice());
     }
             
 
@@ -801,7 +801,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(-2807.69812222, result.getPrice());
+        assertEquals(2381.07148045, result.getPrice());
     }
             
 
@@ -810,8 +810,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/077.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(1362, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(547, result.getPrice());
     }
             
 
@@ -820,8 +820,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/078.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(1779, result.getPrice());
+        assertTrue("Type OK", result instanceof IrSwap);
+        assertEquals(1994, result.getPrice());
     }
             
 
@@ -830,8 +830,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/079.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(1061, result.getPrice());
+        assertTrue("Type OK", result instanceof CommoditySpot);
+        assertEquals(434252.040231, result.getPrice());
     }
             
 
@@ -840,8 +840,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/080.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(420036.442204, result.getPrice());
+        assertTrue("Type OK", result instanceof IrSwap);
+        assertEquals(1482, result.getPrice());
     }
             
 
@@ -850,8 +850,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/081.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(391629.631231, result.getPrice());
+        assertTrue("Type OK", result instanceof CommoditySpot);
+        assertEquals(1248, result.getPrice());
     }
             
 
@@ -861,7 +861,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof Bond);
-        assertEquals(1918, result.getPrice());
+        assertEquals(-1163, result.getPrice());
     }
             
 
@@ -871,7 +871,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof Bond);
-        assertEquals(309706.845909, result.getPrice());
+        assertEquals(-1628, result.getPrice());
     }
             
 
@@ -880,8 +880,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/084.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(983, result.getPrice());
+        assertTrue("Type OK", result instanceof CommoditySpot);
+        assertEquals(88431.7232449, result.getPrice());
     }
             
 
@@ -891,7 +891,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof Bond);
-        assertEquals(482, result.getPrice());
+        assertEquals(147134.779783, result.getPrice());
     }
             
 
@@ -900,8 +900,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/086.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(323613.912634, result.getPrice());
+        assertTrue("Type OK", result instanceof Bond);
+        assertEquals(385575.638252, result.getPrice());
     }
             
 
@@ -910,8 +910,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/087.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(236, result.getPrice());
+        assertTrue("Type OK", result instanceof Bond);
+        assertEquals(154724.256553, result.getPrice());
     }
             
 
@@ -920,8 +920,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/088.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof CommoditySpot);
-        assertEquals(58158.3568928, result.getPrice());
+        assertTrue("Type OK", result instanceof IrSwap);
+        assertEquals(36843.2198989, result.getPrice());
     }
             
 
@@ -930,8 +930,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/089.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(388, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(351, result.getPrice());
     }
             
 
@@ -940,8 +940,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/090.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(1975, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(300, result.getPrice());
     }
             
 
@@ -950,8 +950,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/091.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(207139.824022, result.getPrice());
+        assertTrue("Type OK", result instanceof IrSwap);
+        assertEquals(446412.228137, result.getPrice());
     }
             
 
@@ -960,8 +960,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/092.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(1762, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(353673.37099, result.getPrice());
     }
             
 
@@ -971,7 +971,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof Bond);
-        assertEquals(912, result.getPrice());
+        assertEquals(441822.928235, result.getPrice());
     }
             
 
@@ -981,7 +981,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof Bond);
-        assertEquals(299321.548267, result.getPrice());
+        assertEquals(158004.103383, result.getPrice());
     }
             
 
@@ -990,8 +990,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/095.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(1798, result.getPrice());
+        assertTrue("Type OK", result instanceof Bond);
+        assertEquals(-9699.58956917, result.getPrice());
     }
             
 
@@ -1000,8 +1000,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/096.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof FxSpot);
-        assertEquals(364163.610017, result.getPrice());
+        assertTrue("Type OK", result instanceof IrSwap);
+        assertEquals(1273, result.getPrice());
     }
             
 
@@ -1011,7 +1011,7 @@ public class TradeParserTest {
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
         assertTrue("Type OK", result instanceof Bond);
-        assertEquals(413, result.getPrice());
+        assertEquals(366620.739983, result.getPrice());
     }
             
 
@@ -1020,8 +1020,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/098.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof IrSwap);
-        assertEquals(1275, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(321953.690313, result.getPrice());
     }
             
 
@@ -1030,8 +1030,8 @@ public class TradeParserTest {
         String fileAsString = this.file2String("tests/good/099.txt");
         TradeParser parser = new TradeParser(fileAsString);
         Trade result = parser.parse();
-        assertTrue("Type OK", result instanceof Bond);
-        assertEquals(-1837, result.getPrice());
+        assertTrue("Type OK", result instanceof FxSpot);
+        assertEquals(-1890, result.getPrice());
     }
             
 

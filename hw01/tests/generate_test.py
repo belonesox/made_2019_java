@@ -70,6 +70,17 @@ def underscore_to_camelcase(value):
     c = camelcase()
     return "".join(c.next()(x) if x else '_' for x in value.split("_"))
 
+def random_formatting(text):
+    terms = text.split()
+    new_ = []
+    for term in terms:
+        i = random.randint(0, 16)
+        space_ = random.choice(["", "\n" + " "*i, " "*i])
+        new_.append(space_ + term)
+    return "".join(new_)    
+
+
+
 def generate_tests():
     for i in range(100):
         typeValue = random.choice(FOREX_TYPES)
@@ -82,7 +93,7 @@ def generate_tests():
         if not os.path.exists(dir_):
             os.mkdir(dir_)
         with open(filename, 'w') as file_:
-            file_.write(text_)
+            file_.write(random_formatting(text_))
             priceValueS = str(priceValue)
             PARSER_TEST_CLASS_LINES.append(r"""
     @Test

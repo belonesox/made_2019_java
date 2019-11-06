@@ -1,5 +1,2 @@
-
-Trade: { 
-    “type”: IR_SWAP,
-    “price”: 410332.347597
-}
+             Trade:{“type”:IR_SWAP,“price”:
+  64889.6076134      }

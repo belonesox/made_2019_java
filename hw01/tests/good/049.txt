@@ -1,5 +1,2 @@
-
-Trade: { 
-    “type”: IR_SWAP,
-    “price”: 446048.845502
-}
+Trade:           {
+            “type”:                BOND,“price”:   386583.530579}

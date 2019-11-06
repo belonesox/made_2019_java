@@ -1,5 +1,3 @@
 
-Trade: { 
-    “type”: BOND,
-    “price”: 70934.4631343
-}
+          Trade:
+       { “type”:BOND,      “price”:444116.906425 }

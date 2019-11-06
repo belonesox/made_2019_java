@@ -1,5 +1,2 @@
 
-Trade: { 
-    “type”: BOND,
-    “price”: 69646.0420041
-}
+              Trade:            {              “type”:   COMMODITY_SPOT,“price”:-1499}

@@ -1,5 +1,1 @@
-
-Trade: { 
-    “type”: IR_SWAP,
-    “price”: 1975
-}
+Trade:{“type”:FX_SPOT,            “price”:             300            }

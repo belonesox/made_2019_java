@@ -1,5 +1,4 @@
-
-Trade: { 
-    “type”: FX_SPOT,
-    “price”: 66230.3751131
-}
+            Trade:{“type”:               BOND,
+     “price”:
+            320481.566261
+             }

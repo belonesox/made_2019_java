@@ -1,5 +1,3 @@
-
-Trade: { 
-    “type”: COMMODITY_SPOT,
-    “price”: 160896.239034
-}
+Trade:          {“type”:
+  IR_SWAP,“price”:
+     540      }
